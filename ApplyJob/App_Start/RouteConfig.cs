@@ -18,6 +18,9 @@ namespace ApplyJob
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Personal", action = "Index", id = UrlParameter.Optional }
             );
+
+            
         }
+       
     }
 }

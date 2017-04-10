@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "adminhome";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+     <meta name="viewport"  content="width=device-width,inital-scale=1,maximum-sale=1,user-scalable=no">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style >
+        .cus-meun {
+            border:1px solid #ddd !important;
+            border-radius:5px;
+        }
+         .cus-meun li ul {
+            padding-left:35px;  
+                 }
+
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">GoodJob后台管理系统</a>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#">欢迎您：</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+       </nav>
+       <ul class="nav nav-pills" style="padding-top:50px;">
+           <li class="active"><a href="#">求职者管理</a></li>
+           <li><a href="#">企业管理</a></li>
+           <li><a href="#">管理管理</a></li>
+       </ul>
+      <div class="row">
+          <div class="col-lg-2 cus-meun">
+              <ul class="nav nav-pills nav-stacked">
+                  <li>
+                      <a href=""><span class="glyphicon glyphicon-collapse-down "></span>求职者管理</a>
+
+                      <ul class="nav  nav-pills nav-stacked">
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;查看所有求职者</a>
+                          </li>
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;删除求职者</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href=""><span class="glyphicon glyphicon-collapse-down "></span>企业管理管理</a>
+
+                      <ul class="nav  nav-pills nav-stacked">
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;查看所有企业</a>
+                          </li>
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;未通过审核企业</a>
+                          </li>
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;删除企业</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href=""><span class="glyphicon glyphicon-collapse-down "></span>管理员管理</a>
+
+                      <ul class="nav  nav-pills nav-stacked">
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-list"></span>&nbsp;修改密码</a>
+                          </li>
+                          <li>
+                              <a href=""><span class="glyphicon glyphicon-plus"></span>&nbsp;添加管理员</a>
+                          </li>
+                      </ul>
+                  </li>
+
+              </ul> 
+          </div>
+          <div class="col-lg-10">
+
+          </div>
+      </div>
+</body>
+</html>

@@ -13,5 +13,10 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult Position()
+        {
+            return View();
+        }
+
     }
 }

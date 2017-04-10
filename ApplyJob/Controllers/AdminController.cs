@@ -13,5 +13,9 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult adminhome()
+        {
+            return View();
+        }
     }
 }
