@@ -1,0 +1,99 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "PersonalHome";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,inital-scale=1,maximum-sale=1,user-scalable=no">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+        .cus-meun {
+            border: 1px solid #ddd !important;
+            border-radius: 5px;
+        }
+
+            .cus-meun li ul {
+                padding-left: 35px;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">GoodJob求职个人中心</a>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#">欢迎您：</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="nav nav-pills" style="padding-top:50px;">
+        <li class="active"><a href="#">个人简历</a></li>
+        <li><a href="#">个人求职</a></li>
+        <li><a href="#">个人信息</a></li>
+    </ul>
+    <div class="row">
+        <div class="col-lg-2 cus-meun">
+            <ul class="nav nav-pills nav-stacked">
+                <li>
+                    <a href=""><span class="glyphicon glyphicon-collapse-down "></span>个人简历</a>
+
+                    <ul class="nav  nav-pills nav-stacked">
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-plus"></span>&nbsp;制作简历</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-minus"></span>&nbsp;删除简历</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-search"></span>&nbsp;查找简历</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-edit"></span>&nbsp;修改简历</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><span class="glyphicon glyphicon-collapse-down "></span>个人求职</a>
+
+                    <ul class="nav  nav-pills nav-stacked">
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-send"></span>&nbsp;简历投递记录</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-envelope"></span>&nbsp;消息中心</a>
+                        </li>
+                     
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><span class="glyphicon glyphicon-collapse-down "></span>个人信息</a>
+
+                    <ul class="nav  nav-pills nav-stacked">
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-edit"></span>&nbsp;修改登录密码</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-edit"></span>&nbsp;修改个人信息</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-lg-10">
+
+        </div>
+    </div>
+</body>
+</html>

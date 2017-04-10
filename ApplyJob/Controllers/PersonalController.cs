@@ -17,6 +17,10 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult PersonalHome()
+        {
+            return View();
+        }
 
     }
 }
