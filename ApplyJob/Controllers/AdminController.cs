@@ -17,5 +17,9 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult AdminLogin()
+        {
+            return View();
+        }
     }
 }

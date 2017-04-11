@@ -13,5 +13,13 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult CompanyHome()
+        {
+            return View();
+        }
+        public ActionResult CompanyIndex()
+        {
+            return View();
+        }
     }
 }
