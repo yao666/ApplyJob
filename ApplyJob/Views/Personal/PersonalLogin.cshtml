@@ -1,6 +1,7 @@
 ﻿
 @{
     Layout = null;
+    ViewBag.Title = "PersonalLogin";
 }
 
 <!DOCTYPE html>
@@ -9,9 +10,113 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>PersonalLogin</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+         .tbar {
+          width: 100%;
+          height: 40px;
+          background:#3291f8;
+        }
+        .tbar ul li{   
+            
+            padding: 8px 15px;    
+            float: right; 
+            list-style: none;   
+          
+           
+
+        }
+        .tbar ul li a {
+             color :#fff;
+                 }
+        .tbar ul li span {
+             color :#fff;
+                 }
+         .denglu {
+            width: 900px;
+            height:400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+      
+           
+        }
+    </style>
 </head>
-<body>
-    <div> 
+<body style="background-image: url('../../image/6.jpg');">
+    <nav class="tbar navbar-fixed-top ">
+
+        <ul class="navbar  pull-left  ">
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">职位搜索</a></li>
+            <li><a href="#">首页</a></li>
+
+        </ul>
+        <ul class="navbar pull-right ">
+            <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("企业入口", "CompanyIndex", "Company")</li>
+            <li><a href="#">|</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;登录</a></li>
+        </ul>
+    </nav>
+    <div class="denglu">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <img src="~/image/求职登录小图.jpg" />
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <from role="form" class="form-horizontal">
+                    <h3>GoodJob个人用户登录</h3>
+                    <br />
+                    <div class="form-group ">
+                        <label for="PersonalUser" class="col-lg-3">用户名</label>
+                        <div class="col-lg-9">
+                            <input type="text" id="PersonalUser" placeholder="请输入用户名" class="form-control" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group ">
+                        <label for="PersonalPasswd" class="col-lg-3">密码</label>
+                        <div class="col-lg-9">
+                            <input type="text" id="PersonalPasswd" placeholder="请输入密码" class="form-control" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group ">
+                        <div class="col-lg-3">
+
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <input type="text" id="" placeholder="输入验证码" class="form-control" />
+
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="glyphicon glyphicon-refresh"></span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="form-group" style="margin-top:30px;">
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn  btn-success btn-block">登&nbsp;录</button>
+                        </div>
+                    </div>
+                    <div><a href=""><h4 class="text-success">没有账号?立即注册</h4></a></div>
+                </from>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>

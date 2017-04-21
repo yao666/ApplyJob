@@ -15,6 +15,27 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <style  type="text/css">
+        
+         .tbar {
+          width: 100%;
+          height: 40px;
+          background:#b5b7ba;
+        }
+        .tbar ul li{   
+            
+            padding: 8px 15px;    
+            float: right; 
+            list-style: none;   
+          
+           
+
+        }
+        .tbar ul li a {
+             color :#fff;
+                 }
+         .tbar ul li  span {
+             color :#fff;
+                 }
         .denglu {
            width:450px;
            height:350px;
@@ -30,30 +51,37 @@
     </style>
 </head>
 <body style="background-image: url('../../image/登录背景管理员.jpg');">
-    <div class="denglu">
-        <from role="form" class="form-horizontal">
-            <h3>GoodJob后台管理系统登录</h3>
-            <br />
-            <div class="form-group ">
-                <label for="Adminuser" class="col-lg-2">用户名</label>
-                <div class="col-lg-10">
-                    <input type="text" id="Adminuser" placeholder="请输入用户名" class="form-control" />
+    <nav class="tbar navbar-fixed-top ">
+      <ul class="navbar pull-right ">
+            <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("企业入口", "CompanyIndex", "Company")</li>
+            <li><a href="#">|</a></li>
+            <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("人才入口", "Index", "Personal")</li>
+        </ul>
+    </nav>
+        <div class="denglu">
+            <from role="form" class="form-horizontal">
+                <h3>GoodJob后台管理系统登录</h3>
+                <br />
+                <div class="form-group ">
+                    <label for="AdminUser" class="col-lg-2">用户名</label>
+                    <div class="col-lg-10">
+                        <input type="text" id="AdminUser" placeholder="请输入用户名" class="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group ">
-                <label for="AdminPasswd" class="col-lg-2">密码</label>
-                <div class="col-lg-10">
-                    <input type="text" id="AdminPasswd" placeholder="请输入密码" class="form-control" />
+                <div class="form-group ">
+                    <label for="AdminPasswd" class="col-lg-2">密码</label>
+                    <div class="col-lg-10">
+                        <input type="text" id="AdminPasswd" placeholder="请输入密码" class="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group" style="margin-top:30px;">
-                <div class="col-lg-12">
-                   <button type="submit" class="btn  btn-success btn-block">登录</button>
+                <div class="form-group" style="margin-top:30px;">
+                    <div class="col-lg-12">
+                        <button type="submit" class="btn  btn-success btn-block">登录</button>
+                    </div>
+
                 </div>
-              
-            </div>
-        </from> 
-        
-    </div>
+            </from>
+
+        </div>
 </body>
 </html>

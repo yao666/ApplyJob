@@ -21,5 +21,13 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult CompanyLogin()
+        {
+            return View();
+        }
+        public ActionResult CompanySearch()
+        {
+            return View();
+        }
     }
 }

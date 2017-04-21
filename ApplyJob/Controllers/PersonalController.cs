@@ -21,6 +21,19 @@ namespace ApplyJob.Controllers
         {
             return View();
         }
+        public ActionResult PersonalLogin()
+        {
+            return View();
+        }
+        public ActionResult PersonalRegister()
+        {
+            return View();
 
+        }
+        public ActionResult PersonalSearch()
+        {
+            return View();
+
+        }
     }
 }

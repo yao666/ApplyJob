@@ -1,12 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Goodjob人才网";
    
 }
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Index</title>
+    <title>Goodjob人才网</title>
     <meta name="viewport"  content="width=device-width,inital-scale=1,maximum-sale=1,user-scalable=no">
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
@@ -80,7 +80,12 @@
             .sidebar meummain a {
                 color: #000000;
             }
-        
+            .cline {
+            width: 100%;
+            display: block;
+            height: 15px;
+            clear: both;
+        }
     </style>
 </head>
 <body >
@@ -89,16 +94,18 @@
         <nav class="tbar navbar-fixed-top ">
           
                 <ul class="navbar  pull-left  ">
-                    <li><a href="#">个人中心</a></li>
-                    <li><a href="#">职位搜索</a></li>
-                    <li><a href="#">首页</a></li>
+                    <li>@Html.ActionLink("个人中心", "PersonalHome", "Personal")</li>
+                    <li>@Html.ActionLink("职位搜索", "PersonalSearch", "Personal")</li>
+                    <li>@Html.ActionLink("首页", "Index", "Personal")</li>
 
                 </ul>
 
                 <ul class="navbar pull-right ">
                     <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("企业入口", "CompanyIndex", "Company")</li>
                     <li><a href="#">|</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;登录</a></li>
+                    <li>
+                       <span class="glyphicon glyphicon-user"></span>&nbsp;@Html.ActionLink("登录", "PersonalLogin", "Personal")
+                    </li>
 
                 </ul>
           
@@ -352,47 +359,47 @@
                         <span class="input-group-btn">
                             <button class="btn btn-info" type="button">搜索</button>
                         </span>
-                        
+
                     </div>
-                    
+
                 </div>
                 <!--搜索框结束-->
+                <div class="cline"></div>
                 <div class="container ">
-                    <h3>热门搜索</h3>
-                    <nav class="navbar">
-                        <ul class="nav nav-justified">
-                            <li><a href="#">销售代表</a></li>
-                            <li>
-                                <a href="#">Java</a>
-                            </li>
-                            <li>
-                                <a href="#">产品总监</a>
-                            </li>
-                            <li>
-                                <a href="#">财务</a>
-                            </li>
-                            <li>
-                                <a href="#">金融投资</a>
-                            </li>
-                            <li>
-                                <a href="#">广告设计</a>
-                            </li>
-                            <li>
-                                <a href="#">IOS</a>
-                            </li>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="active"><a href="#">热门搜索</a></li>
 
-                        </ul>
-                    </nav>
-
+                        <li  role="presentation">
+                             <a href="#">销售代表</a>
+                        </li>
+            
+                        <li role="presentation">
+                            <a href="#">Java</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">产品总监</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">财务</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">金融投资</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">广告设计</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">IOS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
             <!--右侧内容页结束-->
         </div>
     </div>
     <div class="footer" style="width:100%;height:70px;   background:#bfbbbb;padding:10px; color:#fff;">
         <p class="text-center">我们的目标：让更多的人通过GoodJob网，快速找到合适的人才和工作！</p>
-        <p class="text-center"><a href=""  style="color:#fff;">管理员后台登录</a></p>
+        <p class="text-center" style="color:#fff;">@Html.ActionLink("管理员登录", "AdminLogin", "Admin")</p>
 
     </div>
 

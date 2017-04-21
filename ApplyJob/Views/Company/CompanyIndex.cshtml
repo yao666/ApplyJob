@@ -37,24 +37,50 @@
          .tbar ul li  span {
              color :#fff;
                  }
+        .Tou {
+            width: 100%;
+            height: 300px;
+            background-image: url('../../image/tou.jpg');
+           
+        }
+
+
+        .New {
+             width: 100%;
+             height:300px;
+             border: 1px solid #ff0000 !important;
+        }
+
        </style>
 </head>
 <body>
     <div class="tbar ">
         <ul class="navbar pull-left ">
-            <li><a href="#">企业中心</a></li>
-            <li><a href="#">人才搜索</a></li>
-            <li><a href="#">企业首页</a></li>
-
+            <li>@Html.ActionLink("企业中心", "CompanyHome", "Company")</li>
+            <li>@Html.ActionLink("人才搜索", "CompanySearch", "Company")</li>
+            <li>@Html.ActionLink("首页", "CompanyIndex", "Company")</li>
         </ul>
-
         <ul class="navbar pull-right ">
             <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("人才入口", "Index", "Personal")</li>
             <li><a href="#">|</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;登录</a></li>
-
+            <li><span class="glyphicon glyphicon-user"></span>&nbsp;@Html.ActionLink("登录", "CompanyLogin", "Company")</li>
         </ul>
-      </div>
-        
+    </div>
+   
+    <div class="Tou">
+
+    </div>
+    <ul></ul>
+    <div class="container">
+        <div class="New">
+
+        </div>
+    </div>  
+    <div class="footer" style="width:100%;height:70px;   background:#bfbbbb;padding:10px; color:#fff;">
+        <p class="text-center">我们的目标：让更多的人通过GoodJob网，快速找到合适的人才和工作！</p>
+        <p class="text-center" style="color:#fff;">@Html.ActionLink("管理员登录", "AdminLogin", "Admin")</p>
+
+    </div>
+
 </body>
 </html>

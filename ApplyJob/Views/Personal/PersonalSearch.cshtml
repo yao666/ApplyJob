@@ -1,0 +1,183 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>PersonalSearch</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1,maximum-sale=1,user-scalable=no">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+           .tbar {
+          width: 100%;
+          height: 40px;
+          background:#3291f8;
+        }
+        .tbar ul li{   
+            
+            padding: 8px 15px;    
+            float: right; 
+            list-style: none;   
+          
+           
+
+        }
+        .tbar ul li a {
+             color :#fff;
+                 }
+        .tbar ul li span {
+             color :#fff;
+                 }
+        .Searchbtn {
+            margin-top:70px;
+        }
+        .Shousuo {
+            width:100%;
+            height:300px;
+          
+           
+        }
+            .Shousuo h4 {
+               color:#808080;
+               margin:20px;
+            }
+        .cline {
+            width: 100%;
+            display: block;
+            height: 15px;
+            clear: both;
+        }
+        .sectbar ul li {
+            padding: 8px 15px;
+            float: left;
+            list-style: none;
+            margin-top:5px;
+        }  
+          
+             
+    </style>
+</head>
+<body >
+    <nav class="tbar navbar-fixed-top ">
+
+        <ul class="navbar  pull-left  ">
+            <li>@Html.ActionLink("个人中心", "PersonalHome", "Personal")</li>
+            <li>@Html.ActionLink("职位搜索", "PersonalSearch", "Personal")</li>
+            <li>@Html.ActionLink("首页", "Index", "Personal")</li>
+
+        </ul>
+
+        <ul class="navbar pull-right ">
+            <li><span class="glyphicon glyphicon-stats"></span>&nbsp;@Html.ActionLink("企业入口", "CompanyIndex", "Company")</li>
+            <li><a href="#">|</a></li>
+            <li>
+                <span class="glyphicon glyphicon-user"></span>&nbsp;@Html.ActionLink("登录", "PersonalLogin", "Personal")
+            </li>
+        </ul>
+    </nav>
+    <div class="container ">
+        <div class="row">
+            
+            <div class="col-lg-8">
+                <div class="Searchbtn">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入行业/职位...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-info" type="button">搜索</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+    <div class="cline"></div>
+    <div class="container">
+        <div class="Shousuo">
+            <div class="SelType">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h4>行业</h4>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="sectbar">
+                            <ul class="navbar ">
+                                <li><a href="#">IT/互联网</a></li>
+                                <li><a href="#">电子/通信/硬件</a></li>
+                                <li><a href="#">金融</a></li>
+                                <li><a href="#">交通/贸易/物流</a></li>
+                                <li><a href="#">机械/制造</a></li>
+                                <li><a href="#">能源/环保</a></li>
+                                <li><a href="#">制药/医疗</a></li>
+                                <li><a href="#">机械/制造</a></li>
+                                <li><a href="#">能源/建设</a></li>
+                                <li><a href="#">房地产/医疗</a></li> 
+                                <li><a href="#">交通/贸易/物流</a></li>
+                                <li><a href="#">广告/媒体/娱乐/出版</a></li>
+                                <li><a href="#">教育/培训</a></li>
+                                <li><a href="#">政府/非营利机构</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="SelType">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h4>公司性质</h4>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="sectbar">
+                            <ul class="navbar ">
+                                <li><a href="#">外商独资</a></li>
+                                <li><a href="#">合资</a></li>
+                                <li><a href="#">上市公司</a></li>
+                                <li><a href="#">国企</a></li>
+                                <li><a href="#">国家机关</a></li>
+                                <li><a href="#">民营/私企</a></li>
+                                <li><a href="#">股份制</a></li>
+                                <li><a href="#">代表处</a></li>
+                                <li><a href="#">非营利组织</a></li>
+                                <li><a href="#">其他</a></li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="SelType">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h4>月薪</h4>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="sectbar">
+                            <ul class="navbar ">
+                                <li><a href="#">2000以下</a></li>
+                                <li><a href="#">2000~4000</a></li>
+                                <li><a href="#">4000~6000</a></li>
+                                <li><a href="#">6000~8000</a></li>
+                                <li><a href="#">8000~10000</a></li>
+                                <li><a href="#">10000~12000</a></li>
+                                <li><a href="#">12000~15000</a></li>
+                                <li><a href="#">15000~20000</a></li>
+                                <li><a href="#">20000~30000</a></li>
+                                <li><a href="#">30000~40000</a></li>
+                                <li><a href="#">40000~50000</a></li>
+                                <li><a href="#">50000以上</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

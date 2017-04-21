@@ -125,10 +125,17 @@
     <Content Include="image\2.jpg" />
     <Content Include="image\2345170_183552017000_2.jpg" />
     <Content Include="image\3.jpg" />
+    <Content Include="image\6.jpg" />
     <Content Include="image\logo.jpg" />
     <Content Include="image\o.jpg" />
     <Content Include="image\oo.jpg" />
     <Content Include="image\ooo.jpg" />
+    <Content Include="image\tou.jpg" />
+    <Content Include="image\企业登录小.jpg" />
+    <Content Include="image\企业登录小图.png" />
+    <Content Include="image\企业登录背景图.jpg" />
+    <Content Include="image\求职ok.jpg" />
+    <Content Include="image\求职登录小图.jpg" />
     <Content Include="image\登录背景管理员.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -170,7 +177,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Personal\Index.cshtml" />
     <Content Include="Views\PersonalLayoutPage.cshtml" />
-    <Content Include="Views\Personal\Position.cshtml" />
     <Content Include="Views\Admin\adminhome.cshtml" />
     <Content Include="Views\Admin\AdminLogin.cshtml" />
     <Content Include="Views\Company\CompanyLogin.cshtml" />
@@ -178,6 +184,9 @@
     <Content Include="Views\Personal\PersonalHome.cshtml" />
     <Content Include="Views\Company\CompanyHome.cshtml" />
     <Content Include="Views\Company\CompanyIndex.cshtml" />
+    <Content Include="Views\Personal\PersonalRegister.cshtml" />
+    <Content Include="Views\Personal\PersonalSearch.cshtml" />
+    <Content Include="Views\Company\CompanySearch.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
